@@ -9,13 +9,18 @@ import android.view.MenuItem
 import android.widget.CheckBox
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import es.iessaladillo.pedrojoya.profile.R
 import es.iessaladillo.pedrojoya.profile.data.local.Database
 import es.iessaladillo.pedrojoya.profile.ui.main.ProfileActivity
+import es.iessaladillo.pedrojoya.profile.ui.main.ProfileActivityViewModel
 import kotlinx.android.synthetic.main.avatar_activity.*
 
 class AvatarActivity : AppCompatActivity() {
     var selectedAvatar: Int = 0
+
+    private lateinit var viewModel: ViewModel
 
     private lateinit var imgAvatar1: ImageView
     private lateinit var imgAvatar2: ImageView
@@ -44,6 +49,10 @@ class AvatarActivity : AppCompatActivity() {
         getIntentData()
         setupViews()
         setImages()
+
+        if (savedInstanceState != null) {
+            selectedAvatar = savedInstanceState.getInt("SELECTED_AVATAR")
+        }
 
         //select the default avatar
         selectAvatar(selectedAvatar)
@@ -93,6 +102,12 @@ class AvatarActivity : AppCompatActivity() {
         chkAvatar9 = findViewById(R.id.chkAvatar9)
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putInt("SELECTED_AVATAR", selectedAvatar)
+
+        super.onSaveInstanceState(outState)
+    }
+
     private fun setImages(){
         imgAvatar1.setImageResource(Database.queryAllAvatars()[0].imageResId)
         imgAvatar2.setImageResource(Database.queryAllAvatars()[1].imageResId)
@@ -119,10 +134,6 @@ class AvatarActivity : AppCompatActivity() {
 
     private fun getIntentData(){
         selectedAvatar = intent.getIntExtra(EXTRA_AVATAR, 0)
-    }
-
-    override fun onBackPressed() {
-        finish()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
