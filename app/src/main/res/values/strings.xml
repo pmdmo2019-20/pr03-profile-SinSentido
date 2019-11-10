@@ -2,4 +2,18 @@
     <string name="app_name">Profile</string>
     <string name="avatar_title">Select Avatar</string>
     <string name="profile_title">User profile</string>
+    <string name="avatar_select" />
+    <string name="nameRequired">Name (*)</string>
+    <string name="emailRequired">Email (*)</string>
+    <string name="phonenumberRequired">Phone number (*)</string>
+    <string name="addressRequired">Address (*)</string>
+    <string name="webRequired">Web (*)</string>
+    <string name="profile_save" />
+    <string name="Bulbasaur">Bulbasaur</string>
+    <string name="profile_invalid_name">Invalid name</string>
+    <string name="profile_invalid_email">Invalid email</string>
+    <string name="profile_invalid_phonenumber">Invalid phone number</string>
+    <string name="profile_invalid_address">Invalid address</string>
+    <string name="profile_invalid_web">Invalid web</string>
+    <string name="userSaved">User saved succesfully</string>
 </resources>

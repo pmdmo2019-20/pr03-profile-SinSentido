@@ -26,13 +26,13 @@ class AvatarActivityRotationTest {
         AvatarActivity::class.java, true, false
     )
 
-    @Before
-    fun setup() {
-        val avatar = Avatar(1, R.drawable.pikachu, "Pikachu")
-        testRule.launchActivity(
-            Intent().putExtra("EXTRA_AVATAR", avatar)
-        )
-    }
+//    @Before
+//    fun setup() {
+//        val avatar = Avatar(1, R.drawable.pikachu, "Pikachu")
+//        testRule.launchActivity(
+//            Intent().putExtra("EXTRA_AVATAR", avatar)
+//        )
+//    }
 
     // Rotation
 

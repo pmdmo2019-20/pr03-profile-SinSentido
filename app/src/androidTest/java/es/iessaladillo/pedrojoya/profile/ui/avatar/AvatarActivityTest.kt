@@ -28,13 +28,13 @@ class AvatarActivityTest {
         AvatarActivity::class.java, true, false
     )
 
-    @Before
-    fun setup() {
-        val avatar = Avatar(2, R.drawable.bulbasur, "Bulbasur")
-        testRule.launchActivity(
-            Intent().putExtra("EXTRA_AVATAR", avatar)
-        )
-    }
+//    @Before
+//    fun setup() {
+//        val avatar = Avatar(2, R.drawable.bulbasur, "Bulbasur")
+//        testRule.launchActivity(
+//            Intent().putExtra("EXTRA_AVATAR", avatar)
+//        )
+//    }
 
     @Test
     fun shouldSelectReceivedAvatar() {

@@ -1,3 +1,3 @@
 package es.iessaladillo.pedrojoya.profile.data.local.entity
 
-// TODO: Avatar class
+class Avatar (val id: Int, val imageResId: Int, val name: String)

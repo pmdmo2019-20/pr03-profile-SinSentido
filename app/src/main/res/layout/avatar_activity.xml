@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:menu="@menu/profile_activity">
+
+    <ImageView
+        android:id="@+id/imgAvatar1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imgAvatar4"
+        app:layout_constraintEnd_toStartOf="@+id/imgAvatar2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgAvatar2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imgAvatar5"
+        app:layout_constraintEnd_toStartOf="@+id/imgAvatar3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar1"
+        app:layout_constraintTop_toTopOf="parent" />/>
+
+    <ImageView
+        android:id="@+id/imgAvatar3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imgAvatar6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgAvatar4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imgAvatar7"
+        app:layout_constraintEnd_toStartOf="@+id/imgAvatar5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar1" />
+
+    <ImageView
+        android:id="@+id/imgAvatar5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imgAvatar8"
+        app:layout_constraintEnd_toStartOf="@+id/imgAvatar6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar4"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar2" />
+
+    <ImageView
+        android:id="@+id/imgAvatar6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imgAvatar9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar5"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar3" />/>
+
+    <ImageView
+        android:id="@+id/imgAvatar7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgAvatar8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar4" />
+
+    <ImageView
+        android:id="@+id/imgAvatar8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgAvatar9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar7"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar5" />
+
+    <ImageView
+        android:id="@+id/imgAvatar9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar8"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar6" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar4"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar1" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar5"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar2" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar6"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar3" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar7"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar4" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar8"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar5" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar9"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar6" />
+
+    <TextView
+        android:id="@+id/lblAvatar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar1"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar1"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar1" />
+
+    <TextView
+        android:id="@+id/lblAvatar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar2"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar2"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar1" />
+
+    <TextView
+        android:id="@+id/lblAvatar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar2" />
+
+    <TextView
+        android:id="@+id/lblAvatar4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Bulbasaur"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar4"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAvatar5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar5"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar5"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar4" />
+
+    <TextView
+        android:id="@+id/lblAvatar6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar5" />
+
+    <TextView
+        android:id="@+id/lblAvatar7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar7"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar7"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar7" />
+
+    <TextView
+        android:id="@+id/lblAvatar8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar8"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar8"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar7" />
+
+    <TextView
+        android:id="@+id/lblAvatar9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:background="#88888888"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

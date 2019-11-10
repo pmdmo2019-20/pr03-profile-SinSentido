@@ -100,25 +100,25 @@ class ProfileActivityIntentTest {
         )
     }
 
-    @Test
-    fun shouldReceiveRightIntent() {
-        // Setup the result intent. Needed if is not one of your activities.
-        val resultData = Intent()
-        val avatar = Avatar(2, R.drawable.bulbasur, "Bulbasur")
-        resultData.putExtra(AvatarActivity.EXTRA_AVATAR, avatar)
-        val result = Instrumentation.ActivityResult(
-            Activity.RESULT_OK, resultData
-        )
-        // We simulate the result intent.
-        intending(hasComponent(AvatarActivity::class.java.name)).respondWith(result)
-
-        onView(withId(R.id.imgAvatar)).perform(click())
-        // Check result set to views.
-        onView(withId(R.id.imgAvatar))
-            .check(matches(DrawableMatcher(avatar.imageResId)))
-        onView(withId(R.id.lblAvatar)).check(
-            matches(withText(avatar.name))
-        )
-    }
+//    @Test
+//    fun shouldReceiveRightIntent() {
+//        // Setup the result intent. Needed if is not one of your activities.
+//        val resultData = Intent()
+//        val avatar = Avatar(2, R.drawable.bulbasur, "Bulbasur")
+//        resultData.putExtra(AvatarActivity.EXTRA_AVATAR, avatar)
+//        val result = Instrumentation.ActivityResult(
+//            Activity.RESULT_OK, resultData
+//        )
+//        // We simulate the result intent.
+//        intending(hasComponent(AvatarActivity::class.java.name)).respondWith(result)
+//
+//        onView(withId(R.id.imgAvatar)).perform(click())
+//        // Check result set to views.
+//        onView(withId(R.id.imgAvatar))
+//            .check(matches(DrawableMatcher(avatar.imageResId)))
+//        onView(withId(R.id.lblAvatar)).check(
+//            matches(withText(avatar.name))
+//        )
+//    }
 
 }
